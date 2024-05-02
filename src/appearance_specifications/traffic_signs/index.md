@@ -70,19 +70,19 @@ The allowable traffic signs are as in {numref}`tab:traffic-signs`.
 
 * - ```{figure} ../../_images/appearance_specifications/signs/stop.png
     :name: subfig:stop
-    :width: 30%
+    :width: 80%
 
     stop
     ```
   - ```{figure} ../../_images/appearance_specifications/signs/yield.png
     :name: subfig:yield
-    :width: 30%
+    :width: 80%
 
     yield
     ```
   - ```{figure} ../../_images/appearance_specifications/signs/no-right.png
     :name: subfig:no-right
-    :width: 30%
+    :width: 80%
 
     no-right-turn
     ```
