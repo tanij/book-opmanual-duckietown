@@ -14,7 +14,7 @@
 ## Before we begin 
 ```{tip}
 To ensure that your streets will last long, make sure to follow these: 
-* Clean the tiles with a cloth and some water and soap before attaching any tape.
+* Clean the tiles with a mixture of water and soap, or alcohol, and let them dry completely before attaching tapes.
 * Place the yellow tape on the tile and cut out pieces rather than pre-cutting them and attaching them to the tile as glue will be lost if you do not directly place them at the intended spot.   
 ```
 
