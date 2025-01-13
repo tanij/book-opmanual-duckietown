@@ -1,20 +1,29 @@
+
 (dt-ops-infrastructure-layer)=
 # Layer - Infrastructure
 
-The infrastructure layer is made of:
-* [traffic lights](specs-layer-traffic-lights), and 
-* watchtowers ([legacy instructions](https://docs-old.duckietown.org/daffy/opmanual_autolab/out/watchtower_hardware.html), [work in progress new instructions](https://docs.duckietown.com/ente/opmanual-autolab/intro.html)).
+The infrastructure layer is composed of two primary elements:
+- [Traffic Lights](specs-layer-traffic-lights)
+- Watchtowers ([legacy instructions](https://docs-old.duckietown.org/daffy/opmanual_autolab/out/watchtower_hardware.html), [work in progress new instructions](https://docs.duckietown.com/ente/opmanual-autolab/intro.html))
 
-Infrastructure elements sit on the tilemap (floor) layer, outside the lanes, and interact with the Duckiebots in town.
+Infrastructure elements are positioned on the tilemap (floor) layer, outside the lanes, and interact directly with Duckiebots within Duckietown.
 
-Traffic lights and watchtowers are proper robots: they have computation, sensing, memory and actuation capabilities. As such, they can be programmed to exhibit behaviors, including communication with other agents.
+## Key Components and Behaviors
 
-The most fundamental behavior of a traffic light is to signal (stop and go) to the Duckiebots at intersections.
+1. **Traffic Lights**: These function as robots with computation, sensing, memory, and actuation capabilities. Their primary behavior is to signal (stop and go) at intersections, ensuring smooth navigation and traffic management for Duckiebots.
 
-The most fundamental behavior of watchtowers is to localize Duckiebots and communicate their position to other agents. 
+2. **Watchtowers**: These robotic systems localize Duckiebots and communicate their positions to other agents. Watchtowers form the backbone of a Duckietown Autolab, providing advanced coordination and monitoring. 
 
-A network of watchtowers is the first step to building a Duckietown Autolab ([legacy operation manual](), [work in progress manual](https://docs.duckietown.com/ente/opmanual-autolab/intro.html)). 
+   - **Legacy Manual**: [Watchtower Hardware - Legacy Instructions](https://docs-old.duckietown.org/daffy/opmanual_autolab/out/watchtower_hardware.html)
+   - **Work in Progress**: [Updated Watchtower Manual](https://docs.duckietown.com/ente/opmanual-autolab/intro.html)
+
+A network of watchtowers is an essential step in upgrading Duckietown to an Autolab environment. Traffic lights can be integrated into this network to extend their functionality.
 
 ```{tip}
-If this is your first read-through you may ignore Watchtowers. If you are planning on upgrading your Duckietown to an Autolab at any point in time, remember that traffic lights can be used as part of the Watchtowers network. 
+If this is your first time exploring the infrastructure layer, you may ignore Watchtowers. However, if you plan to upgrade your Duckietown to an Autolab, remember that traffic lights can be incorporated into the Watchtower network.
+```
+
+```{seo}
+:description: Learn about the infrastructure layer in Duckietown, featuring traffic lights and watchtowers for advanced robotics operations and communication.
+:keywords: Duckietown, infrastructure layer, traffic lights, watchtowers, robotics, Duckiebots, Autolab, autonomous systems, advanced robotics, localization
 ```

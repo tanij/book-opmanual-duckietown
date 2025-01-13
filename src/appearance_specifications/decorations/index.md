@@ -1,19 +1,27 @@
+
 (dt-ops-non-functional-layer)=
 # Decorations
 
-Non-functional objects like decorative buildings, sit on the floor layer of empty tiles. They are non-functional when used exclusively for decorative purposes.
+Non-functional objects, such as decorative buildings, are placed on the floor layer of empty tiles in Duckietown. These objects are considered non-functional when used solely for decorative purposes.
 
-The citizens of Duckietown love their cities colorful and fun, and encourage all efforts at adding non-functional components to the empty space.
- 
-A great starting point for a more visually pleasing Duckietown are colored felts to simulate grass or bodies of water. Any other contraption that would please the population is welcome, too. 
+The citizens of Duckietown appreciate vibrant, visually appealing cities and encourage creative efforts to enhance the empty spaces with decorations.
+
+### Ideas for Decorative Enhancements
+
+- **Colored Felts**: Simulate grass, water, or other natural elements to add realism to the environment.
+- **Custom Contraptions**: Any imaginative addition that beautifies the city and pleases its citizens is welcome.
 
 ```{caution}
-1. Make sure the placement of your decorations does not interfere with the tilemap and signals layers.
-2. Choose colors that Duckiebots do not give meaning to. E.g., avoid red, yellow and white.
-3. Choose materials that do not reflect light, and you will save many hours debugging algorithms.
+1. Ensure that decorations do not interfere with the tilemap and signals layers.
+2. Avoid using colors that Duckiebots interpret, such as red, yellow, and white.
+3. Use non-reflective materials to prevent algorithm debugging issues caused by glare.
 ```
 
-Moreover, although Duckiebot drivers all have their driving licenses and know to focus 
-on the road, the _background_, i.e., whatever is in the room the Duckietown was assembled, 
-matters too. 
+### Background Considerations
 
+Even though Duckiebot drivers are trained to focus on the road, the **background** (e.g., walls or furniture in the room where Duckietown is assembled) also plays a role in the overall experience. A thoughtfully designed environment enhances both aesthetics and functionality.
+
+```{seo}
+:description: Enhance your Duckietown with non-functional decorations and learn best practices for creating a vibrant but well specified robotics environment.
+:keywords: Duckietown, decorations, non-functional layer, robotics, Duckiebots, colored felts, modular cities, robotics education, creative design, appearance specifications
+```

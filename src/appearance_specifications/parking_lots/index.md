@@ -1,3 +1,4 @@
+
 (specs-layer-parking-lots)=
 # Layer - Parking Lots {bdg-warning}`BETA`
 
@@ -5,26 +6,27 @@
 The tile types described here are experimental. Use at your own risk!
 ```
 
-A parking lot is a place for Duckiebots to go when they are tired and need a rest.
+Parking lots provide designated spaces for Duckiebots to "rest" when not in operation, adding realism and functionality to Duckietown cities. For an example application of parking lots in Duckietown, see this student ["Project Parking"](https://duckietown.com/autonomous-parking-in-duckietown/).
 
 A parking lot introduces three additional tile types:
 
-1. **Parking lot entry tile**: This is similar to a straight tile except with a red stop in the middle. 
-   The parking lot sign ({numref}`subfig:parking`) will be visible from this stop line.
-2. **Parking spot tiles**:
-3. **Parking spot access tiles**:
+1. **Parking Lot Entry Tile**: Similar to a straight tile but with a red stop line in the middle. The parking lot sign ({numref}`subfig:parking`) must be visible from this stop line.
+2. **Parking Spot Tiles**: Designated spaces for Duckiebots to park.
+3. **Parking Spot Access Tiles**: Pathways connecting parking spots to the entry tile.
 
-```{todo}
-the tape on the spot and spot access tiles is currently not yet specified.
-```
+## Parking Lot Rules
 
-The following are the rules for a conforming parking lot:
+To ensure a compliant parking lot design, follow these rules:
 
-1. One "parking spot" has size one tile.
-2. From each parking spot, there is a path to go to the parking lot entry tile that does not intersect 
-   any other parking spot. (i.e. when a Duckiebot is parked, nobody will disturb it).
-3. From any position in any parking spot, a Duckiebot can see at least two orthogonal lines or a sign with an AprilTag.
+1. Each parking spot must occupy exactly one tile.
+2. From any parking spot, there must be a clear, uninterrupted path to the parking lot entry tile, avoiding intersections with other parking spots. This ensures parked Duckiebots remain undisturbed.
+3. From any position in a parking spot, a Duckiebot must have a clear view of at least two orthogonal lines or a sign with an AprilTag.
 
-```{todo}
-this point needs further specification
+```{note}
+If you are building parking lots in your Duckietown and would like to share your specificiations, let us know!
+``` 
+
+```{seo}
+:description: Learn about experimental parking lots in Duckietown, including tile types and rules for ensuring functional and compliant parking spaces for Duckiebots.
+:keywords: Duckietown, parking lots, Duckiebots, parking tiles, robotics, experimental features, AprilTags, autonomous systems, robotics education
 ```

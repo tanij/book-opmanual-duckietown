@@ -11,89 +11,73 @@
 *   An assembled traffic light in configuration `DT21-TL` (latest) or previous legacy versions.
 ```
 
-This section describes the physical assembly and installation of traffic lights.  
+This section describes the physical assembly and installation of traffic lights.
 
 ## Overview
 
-Traffic lights are crucial elements of modern cities as city dwellers rely on them to have well-organized traffic. In Duckietown, traffic lights serve the same purpose.
+Traffic lights are crucial elements of modern cities, and in Duckietown, they play a similar role by ensuring well-organized traffic. 
 
-Traffic lights can be used as centralized coordinators of traffic at three or four way intersections in Duckietown, or as elements of a Duckietown Autolab watchtower network. 
+They can serve as:
+1. Centralized coordinators of traffic at 3- or 4-way intersections in Duckietown.
+2. Components of a Duckietown Autolab watchtower network.
 
 ```{attention}
-For Duckiebots to know traffic lights are governing a certain intersection, appropriate signage must be placed at the intersection (traffic light traffic sign instead of stop sign).
+For Duckiebots to recognize traffic lights governing a specific intersection, appropriate signage must be placed (traffic light traffic sign instead of a stop sign).
 ```
 
-* Hardware wise, traffic lights are essentially "Duckiebots without wheels", and a beautiful, different chassis.
-* They are composed of two supports connected by an overhanging tube. 
-* They are intended to be placed on the diagonal direction of an intersection. 
-* One of the supports is equipped with the computational stack and an overseeing camera.
+- **Hardware Design**: Traffic lights are "Duckiebots without wheels," housed in a distinct chassis.
+- **Structure**: They consist of two supports connected by an overhanging tube, with one support containing the computational stack and an overseeing camera.
+- **Placement**: Traffic lights are positioned diagonally at intersections.
 
 ## Hardware Assembly
 
-* For traffic lights of the **latest** configuration, please refer to this for the assembly instructions.
+- For **latest** configuration traffic lights, refer to the instructions:
   * [](traffic-light-assembly-21)
-* For legacy build, the assembly instructions for configurations prior to `TL21` can be found in
+- For legacy builds (prior to `TL21`), follow these instructions:
   * [](traffic-light-assembly-18).
 
 (dt-ops-tl-prep)=
 ### SD-card Image Preparation
 
-Even at software level, traffic lights are essentially Duckiebots without wheels. In initializing the SD-card of your traffic light, follow the instructions [here](book-opmanual-duckiebot:setup-duckiebot-sd-card), with the extra step of using the option `--type traffic_light`. 
+At the software level, traffic lights function similarly to Duckiebots. When initializing the SD-card, follow the instructions [here](book-opmanual-duckiebot:setup-duckiebot-sd-card), ensuring you use the `--type traffic_light` option.
 
-Also, Wi-Fi configuration for traffic lights by default is not set. You can add it using the `--wifi` option as specified in the [instructions](book-opmanual-duckiebot:setup-duckiebot-sd-card).
+Wi-Fi configuration for traffic lights is not set by default. To enable it, use the `--wifi` option as described in the [instructions](book-opmanual-duckiebot:setup-duckiebot-sd-card).
 
-An example flashing command for a Wi-Fi connected traffic light can be:
+Example command for a Wi-Fi connected traffic light:
 
 ```shell
-dts init_sd_card --hostname watchtower![XX] --country ![COUNTRY] --type traffic_light --configuration TL21
+dts init_sd_card --hostname watchtowerXX --country COUNTRY --type traffic_light --configuration TL21
 ```
 
 ```{note}
-For Autolab users: since traffic lights will work as watchtowers adopt the convention:
-
-    hostname : `watchtowerXX`
-
-where `XX` are, e.g., increasing numbers.
+For Autolab users: Use the convention `hostname: watchtowerXX`, where `XX` are incremental numbers.
 ```
+- For standard traffic light setup, use:
+    *   `hostname: trafficlightXX`
 
-- However, if you just want to use it as a traffic light, use the traffic light setup:
-    *   hostname : `trafficlightXX`
-
-- The default username and password are all the same:
-
+- Default login credentials:
     *   Username: `duckie`
     *   Password: `quackquack`
 
 ```{warning}
 For Autolab users, do not change the username and password.
 ```
-<!--
-
-`DB17` instructions
-
-Prepare a Duckiebot image following the instructions on `DB17` Duckiebot initialization and remember to generate the new machine file.
-
-
-See setup-duckiebot
-and this chapter
-See rc-control
-
-
-`DB18` instructions {#dt-ops-tl-init status=draft}
- write detailed instruction, verify functionality with docker infrastructure
-
--->
 
 (dt-ops-tl-launch)=
 ### Launch Traffic Lights
-By choosing the `robot_type` to be `traffic_light`, the blinking behaviour should happen as soon as you boot your device.
 
-If you need to manually restart the behaviour inside the `duckiebot-interface` container, you can restart the traffic light behaviour by running, inside the container:
+By setting the `robot_type` to `traffic_light`, blinking behavior will start automatically on boot.
+
+To restart the traffic light behavior manually, run the following inside the `duckiebot-interface` container:
 
 ```shell
-roslaunch duckiebot_interface all_drivers.launch veh:=![NAME] robot_type:=traffic_light
+roslaunch duckiebot_interface all_drivers.launch veh:=NAME robot_type:=traffic_light
 ```
 
+```{seo}
+:description: Learn how to assemble and set up traffic lights in Duckietown, from hardware installation to SD-card preparation and behavior launching.
+:keywords: Duckietown, traffic lights, robotics, Duckiebots, assembly guide, SD-card preparation, Autolab, watchtower network, intersection control
+```
 
 <!--
 

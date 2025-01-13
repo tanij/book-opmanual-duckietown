@@ -1,17 +1,24 @@
+```{seo}
+:description: Discover how to design Duckietown road networks with tilemaps, road markings, and topological constraints for optimal robotics navigation.
+:keywords: Duckietown, robotics, road network design, tilemap, road markings, Duckiebots, foam tiles, lane markings, topological constraints, AI navigation
+```
+
 (specs-layer-tilemap)=
 # Layer - Tilemap
 
-The `tilemap` layer is the one defining the road network, i.e., the nodes and edges of the road system where Duckiebots will drive in.
- 
-Duckietown roads are obtained by applying colored lane markings to a black background.
+The `tilemap` layer defines the road network, specifying the nodes and edges of the road system where Duckiebots operate. It forms the foundation of Duckietown cities, ensuring structured navigation for autonomous robots.
 
-Duckietown cities are a concatenation of fundamental building blocks. We often refer to 
-these block as _tiles_, because of the medium we assemble them upon: foam "puzzle" tiles.
+Duckietown roads are constructed by applying colored lane markings (white, yellow, and red) to a black background. These markings provide critical navigational information to Duckiebots.
 
-Each tile has rigorously defined geometry and color pattern and
-represents one road element: `straight`, `curve`, `3-way` intersection, `4-way` intersection 
-and `empty` tile. These road elements are positioned in specific orders to create compliant Duckietowns. 
-The road elements are shown in {numref}`fig:tiles`.
+Duckietown cities are built by combining modular building blocks, referred to as _tiles_, assembled on foam "puzzle" tiles. Each tile has rigorously defined geometry and color patterns and represents one of the following road elements:
+- **Straight**: Standard road section.
+- **Curve**: Left or right turn.
+- **3-way intersection**: Junction connecting three paths.
+- **4-way intersection**: Junction connecting four paths.
+- **Empty tile**: Non-road areas.
+
+The tiles are arranged in specific configurations to create compliant Duckietowns. Road elements are visualized in {numref}`fig:tiles`.
+
 
 ```{note}
 Road markings convey important information to the Duckiebots: 

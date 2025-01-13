@@ -16,7 +16,7 @@ parts:
             -   file: appearance_specifications/infrastructure/index
                 sections:
                     - file: appearance_specifications/traffic_lights/index
-#            -   file: appearance_specifications/parking_lots/index
+            -   file: appearance_specifications/parking_lots/index
 #            -   file: appearance_specifications/launch_tiles/index
             -   file: appearance_specifications/decorations/index
 
@@ -29,4 +29,4 @@ parts:
             -   file: assembly/traffic_lights/index
                 sections:
                     - file: assembly/traffic_lights/dt21_tl
-                    - file: assembly/traffic_lights/dt18_tl
+                    - file: assembly/traffic_lights/duckietown-legacy-traffic-light-dt18_tl

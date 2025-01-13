@@ -1,3 +1,8 @@
+```{seo}
+:description: Learn how to build a functional Duckietown with assembly instructions and appearance specifications for optimal robotics and AI performance.
+:keywords: Duckietown, robotics assembly, appearance specifications, functional systems, Duckiebots, robotics education, AI training
+```
+
 (book)=
 # The Duckietown Operation Manual
 
