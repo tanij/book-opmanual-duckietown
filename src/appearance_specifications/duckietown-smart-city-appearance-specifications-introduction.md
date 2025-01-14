@@ -4,7 +4,7 @@
 ```
 
 (duckietown-app-specs-intro)=
-# Introduction
+# Introduction to Duckietown Appearance Specifications
 
 Functionally, Duckietown cities are an integral part of the robotic ecosystem known as Duckietown. These cities are designed to communicate essential information to Duckiebots, enabling them to operate effectively and autonomously.
 
