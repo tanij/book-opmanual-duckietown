@@ -1,6 +1,6 @@
 ```{seo}
 :description: Learn step-by-step assembly of Duckietown road tiles, including straight, curved, and intersection segments, for compliant and functional layouts.
-:keywords: Duckietown, road tiles, assembly guide, robotics, Duckiebots, intersections, curved roads, straight roads, robotics education, tilemap
+:keywords: Duckietown, road tiles, assembly guide, robotics, Duckiebots, intersections, curved roads, straight roads, robotics education, tilemap, smart city
 ```
 
 (dt-ops-tiles)=

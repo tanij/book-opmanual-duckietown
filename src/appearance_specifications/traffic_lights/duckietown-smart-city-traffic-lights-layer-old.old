@@ -26,7 +26,7 @@ The lights must be at a height of 20 cm above the center of the intersection til
 ```
 
 The computational stack of the traffic light is mounted in the appropriate housing, and placed outside 
-the allowable driving region. The cabling is designed to be housed in the appropriate structure as detailed in the [assembly instructions](specs-layer-traffic-lights-assembly). The traffic light pillar stands are positioned so that the embedded traffic signs match their [appearance specifications](traffic-signs-placement). 
+the allowable driving region. The cabling is designed to be housed in the appropriate structure as detailed in the [assembly instructions](specs-layer-traffic-lights-assembly). The traffic light pillar stands are positioned so that the embedded traffic signs match their [appearance specifications placement rules for traffic signs](traffic-signs-placement).
 
 ```{figure} ../../_images/appearance_specifications/traffic-lights/TrafficLight-DT18-TL.png
     :name: subfig:traffic-light-dt18

@@ -1,3 +1,7 @@
+```{seo}
+:description: Learn about the infrastructure layer in Duckietown, featuring traffic lights and watchtowers for advanced robotics operations and communication.
+:keywords: Duckietown, infrastructure layer, traffic lights, watchtowers, robotics, Duckiebots, Autolab, autonomous systems, advanced robotics, localization
+```
 
 (dt-ops-infrastructure-layer)=
 # Layer - Infrastructure
@@ -23,7 +27,4 @@ A network of watchtowers is an essential step in upgrading Duckietown to an Auto
 If this is your first time exploring the infrastructure layer, you may ignore Watchtowers. However, if you plan to upgrade your Duckietown to an Autolab, remember that traffic lights can be incorporated into the Watchtower network.
 ```
 
-```{seo}
-:description: Learn about the infrastructure layer in Duckietown, featuring traffic lights and watchtowers for advanced robotics operations and communication.
-:keywords: Duckietown, infrastructure layer, traffic lights, watchtowers, robotics, Duckiebots, Autolab, autonomous systems, advanced robotics, localization
-```
+

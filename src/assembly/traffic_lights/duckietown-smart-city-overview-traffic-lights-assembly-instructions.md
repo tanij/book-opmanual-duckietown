@@ -1,8 +1,13 @@
+```{seo}
+:description: Learn how to assemble and set up traffic lights in Duckietown, from hardware installation to SD-card preparation and behavior launching.
+:keywords: Duckietown, traffic lights, robotics, Duckiebots, assembly guide, SD-card preparation, Autolab, watchtower network, intersection control
+```
+
 (traffic-light-assembly)=
 # Assembly - Traffic Light
 
 ```{needget}
-*   Traffic light components ([Duckietown project shop](https://get.duckietown.com/products/smart-traffic-light?variant=32311801413771))
+*   Traffic light components ([Duckietown project shop](https://get.duckietown.com/products/smart-traffic-light))
 
 *   An appropriately [configured SD-card](book-opmanual-duckiebot:setup-duckiebot-sd-card).
 
@@ -74,10 +79,6 @@ To restart the traffic light behavior manually, run the following inside the `du
 roslaunch duckiebot_interface all_drivers.launch veh:=NAME robot_type:=traffic_light
 ```
 
-```{seo}
-:description: Learn how to assemble and set up traffic lights in Duckietown, from hardware installation to SD-card preparation and behavior launching.
-:keywords: Duckietown, traffic lights, robotics, Duckiebots, assembly guide, SD-card preparation, Autolab, watchtower network, intersection control
-```
 
 <!--
 
