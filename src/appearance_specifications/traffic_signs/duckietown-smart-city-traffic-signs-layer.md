@@ -1,69 +1,69 @@
+```{seo}
+:description: Discover the functional and non-functional uses of Duckietown traffic signs, including specifications, placement rules, and approved sign types.
+:keywords: Duckietown, traffic signs, AprilTags, robotics, Duckiebots, intersection control, modular cities, signage compliance, robotics education, smart city
+```
+
 (specs-layer-traffic-signs)=
 # Layer - Traffic Signs
 
-The signals layer is made of [traffic signs](dt-ops-city-traffic-signs).
-
-Traffic signs sit on the road layer, outside the lanes, and can serve multiple purposes.
+The signals layer consists of [traffic signs](dt-ops-city-traffic-signs). These traffic signs are placed on the road layer, outside the lanes, serving both functional and non-functional purposes.
 
 ```{seealso}
 The full set of currently existing signs is available 
 [here](https://github.com/duckietown/signs-and-tags).
 ```
 
-## Functional purposes
+## Functional Purposes
 
-Some examples of uses of traffic signs that have a function 
-(these functions are encoded in some Duckietown legacy behaviors):
+Traffic signs can serve specific functions that are encoded in some Duckietown legacy behaviors. For instance:
 
 ```{note}
 Traffic signs:
-* identify the type of intersection (3- or 4-way);
-* identify the position of the Duckiebot at the intersection;
-* inform the Duckiebot of the coordination mechanism for this specific intersection (centralized or decentralized).
+- Identify the type of intersection (3- or 4-way).
+- Indicate the Duckiebot's position at the intersection.
+- Communicate the coordination mechanism for the specific intersection (centralized or decentralized).
 ```
-## Non-functional purposes
 
-Traffic signs can be used for other purposes 
-(these functions are not encoded in any Duckietown out-of-the-box behavior):
+## Non-Functional Purposes
+
+Traffic signs can also be used for purposes not encoded in Duckietown's out-of-the-box behavior. Examples include:
 
 ```{note}
-Traffic signs can moreover be used for:
-* naming roads (and making the department head happy);
-* identifying pedestrian traffic areas;
-* identifying parking lots.
+Traffic signs can be used for:
+- Naming roads (e.g., to honor the department head).
+- Indicating pedestrian traffic areas.
+- Marking parking lots.
 ```
 
 ---
 
-Traffic signage in Duckietown is obtained through the union of traffic signs and 
-`AprilTag` visual markers, as shown in {numref}`fig:traffic-sign-example`.
+Traffic signage in Duckietown combines traditional traffic signs and `AprilTag` visual markers, as shown in {numref}`fig:traffic-sign-example`.
 
 ```{figure} ../../_images/appearance_specifications/signs/traffic-sign-example.png
 :name: fig:traffic-sign-example
-:width: 80%
+:width: 50%
 
 A traffic sign in Duckietown (do not print this one out!)
 ```
 
-We call the symbol above _traffic sign_, while the code below is an AprilTag.
+The symbol above is referred to as a _traffic sign_, while the code below represents an AprilTag.
 
 ```{note}
-To print and assemble the signs refer to [](dt-ops-city-traffic-signs).
+For instructions on printing and assembling traffic signs, refer to [](dt-ops-city-traffic-signs).
 ```
 
 ## Specifications
 
 For traffic signage to be compliant:
-
-* The center of the traffic signs is 13 cm height from the floor layer;
-* The AprilTag is 6.5 cm sq.;
-* There is a white border of roughly 0.8 cm around them;
-* The signage stands perpendicular to the ground, and the angle of the sign with the road is $90^ \circ$.
-* The signal is flat (no deformation / folding) and without wrinkles. This can be obtained, e.g., by printing the signs on thick paper.
+- The center of traffic signs must be 13 cm above the floor layer.
+- AprilTags must measure 6.5 cm squared.
+- There should be a white border of approximately 0.8 cm around the AprilTags.
+- Signs must stand perpendicular to the ground and form a $90^\circ$ angle with the road.
+- Signs must be flat, with no deformation or wrinkles (use thick paper for best results).
 
 ## Types
 
-The allowable traffic signs are as in {numref}`tab:traffic-signs`.
+The allowable traffic signs in Duckietown are listed in {numref}`tab:traffic-signs`.
 
 ````{list-table} Duckietown Traffic Signs
 :name: tab:traffic-signs
@@ -168,18 +168,15 @@ The allowable traffic signs are as in {numref}`tab:traffic-signs`.
   
 ````
 
-(traffic-signs-placement)=
 ## Placement
 
-Signs may appear on the opposite side and at the corner of the adjacent tile from which they are viewed. In the absence of any signs, it is assumed that all network flows are allowed so a sign MUST be placed and visible whenever this is not the case.
+Traffic signs should be placed on empty tiles or at the border of a map. It is crucial to ensure the base of the sign stand does not overlap with any road markings.
 
-Signs must only be placed on empty tiles, or next to one of the other tile types if on the border of a map. As mentioned, it is important to not overlap the base of the sign stand with any road marking.
+At intersections, two signs should be clearly visible from each stop line:
+1. The intersection type (e.g., traffic light or stop sign).
+2. The intersection topology (e.g., 3-way with orientation, or 4-way).
 
-The sign placements for four different cases are shown in {numref}`tab:sign-placement`. At intersections, from each stop line 2 signs should be clearly visible:
-
-1. the intersection type (traffic light or stop sign)
-2. the intersection topology (3-way with correct orientation, or 4-way).
-
+Sign placements for different scenarios are illustrated in {numref}`tab:sign-placement`.
 
 ````{list-table} Placement of Traffic Signs
 :name: tab:sign-placement
@@ -199,19 +196,15 @@ The sign placements for four different cases are shown in {numref}`tab:sign-plac
 * - ```{figure} ../../_images/appearance_specifications/tiles/2-way-signs-straight.svg
     :name: subfig:2-way-signs-straight
 
-    straight road
+    Straight road
     ```
 
   - ```{figure} ../../_images/appearance_specifications/tiles/2-way-signs-turn.svg
     :name: subfig:2-way-signs-turn
 
-    curved road
+    Curved road
     ```
 
 ````
 
-On straight and curved roads, additional signs can be added as desired. 
-Their placement is indicated in {numref}`subfig:2-way-signs-straight` and {numref}`subfig:2-way-signs-turn`. 
-The signs should be placed at the border between two tiles and should face towards oncoming traffic as indicated.
-
-In these figures the arrow is the direction of the sign.
+On straight and curved roads, additional signs can be added as desired. Their placement is indicated in {numref}`subfig:2-way-signs-straight` and {numref}`subfig:2-way-signs-turn`. These signs should face oncoming traffic.
